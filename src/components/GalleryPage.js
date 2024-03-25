@@ -14,17 +14,17 @@ function GalleryPage() {
 
   useEffect(()=>{
     // get product lists from server
-    Axios.get(backend+'/api/gallery/1').then(res=>{
+    Axios.get(backend+'/api/gallery/Shoes').then(res=>{
       setHighlightCategories(res.data)
     })
 
 
-    Axios.get(backend+'/api/gallery/1/1').then(res=>{
+    Axios.get(backend+'/api/gallery/Shoes').then(res=>{
       console.log(res.data)
     })
 
     
-    Axios.post(backend+'/api/gallery/1').then(res=>{
+    Axios.post(backend+'/api/gallery/Shoes').then(res=>{
       setTotal(res.data)
     })
   },[])

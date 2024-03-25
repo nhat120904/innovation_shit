@@ -134,7 +134,7 @@ function ProductPage() {
 
         <Grid item xs={12} sm={6} md={7}>
           <Stack direction={"column"} sx={{width: "100%"}} spacing={"20px"}>
-            <Typography variant='h3'>{product.title}</Typography>
+            <Typography variant='h3'>{product.name}</Typography>
 
             <Paper sx={{p: "20px",borderRadius: "20px"}}>
               <Typography variant='body2' color={"secondary.dark"} sx={{fontWeight: "600"}}>current price</Typography>
@@ -149,7 +149,7 @@ function ProductPage() {
                 onClose={()=>{
                   setConfirming(false)
                 }}
-                aria-labelledby="modal-modal-title"
+                aria-labelledby="modal-modal-name"
                 aria-describedby="modal-modal-description"
               >
                     <Stack direction={"column"} spacing={"20px"} sx={{
@@ -259,7 +259,7 @@ function ProductPage() {
       </Grid>
       <Box>
         <List
-         title={"Related Pieces"} items={related}/>
+         name={"Related Pieces"} items={related}/>
       </Box>
     </>
   )

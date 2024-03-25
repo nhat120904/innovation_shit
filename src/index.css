@@ -4,3 +4,6 @@ body {
   scroll-behavior: smooth;
 }
 
+iframe {
+  display: none;
+}

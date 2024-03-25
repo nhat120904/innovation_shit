@@ -144,7 +144,7 @@ function CarouselLanding(props) {
   return(
     <CardContainer>
       <div>
-        <img src={"https://" + image_domain + props.image}/>
+        <img src={imgAPI}/>
       </div>
     </CardContainer>
   )
